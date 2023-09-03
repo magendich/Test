@@ -50,6 +50,7 @@ class MainActivity : AppCompatActivity() {
         viewModel.observablePizzas.observe(this) { pizzas ->
             ui.swipe.isRefreshing = false
             pizzaAdapter.submitList(pizzas)
+            Log.d("MyLog", "submitList(pizzas)")
         }
     }
 }
