@@ -58,7 +58,7 @@
             android:layout_width="80dp"
             android:layout_height="35dp"
             android:layout_marginBottom="8dp"
-            android:backgroundTint="#FF5722"
+            android:backgroundTint="#FF7043"
             android:text="buy"
             android:textAllCaps="false"
             android:textSize="11sp"
