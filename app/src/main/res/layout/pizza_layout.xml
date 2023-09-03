@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="145dp"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="145dp">
+
+        <ImageView
+            android:id="@+id/pizzaImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <TextView
+            android:id="@+id/pizzaTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Title"
+            android:textColor="#595656"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/pizzaImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/pizzaDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:text="Desc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/pizzaTitle"
+            app:layout_constraintTop_toBottomOf="@+id/pizzaTitle" />
+
+        <TextView
+            android:id="@+id/pizzaIngredients"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Ingredients"
+            app:layout_constraintEnd_toEndOf="@+id/pizzaDesc"
+            app:layout_constraintStart_toStartOf="@+id/pizzaDesc"
+            app:layout_constraintTop_toBottomOf="@+id/pizzaDesc" />
+
+        <Button
+            android:id="@+id/btnBuy"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#FF5722"
+            android:text="buy"
+            android:textAllCaps="false"
+            android:textSize="11sp"
+            app:cornerRadius="7dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/pizzaImage" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
